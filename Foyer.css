@@ -24,15 +24,29 @@
 }
 
 #logo{
-    width: 5vw;
+    margin-left: -12vw !important;
+    margin-right: 0vw !important;
+}
+
+#foot_container{
+    overflow-x: hidden !important;
+}
+
+.fb-logo{
+    color: aliceblue !important;
 }
 
 html body{
-    background-color: #1b9cec;
+    background-color: #043D4F;
+    overflow-x: hidden !important;
+}
+
+.border-top{
+    border-top-width: 100vw !important;
 }
 
 .container{
-    width: 100% !important;
+    width: 100vw !important;
 }
 
 .text-end button:nth-child(2) {
@@ -232,7 +246,13 @@ html body{
     width: calc(100% - 95px) !important;
   }
 
+.nav11{
+    width: 100vw !important;
+}
 
+footer.py-5{
+    padding-bottom: 0vh !important;
+}
 
 @media (max-width: 2560px){
     .arthive{
@@ -243,20 +263,56 @@ html body{
         font-size: 1.15vw !important;
     }
 
-    .nav11{
+    #logo{
         margin-left: 5vw !important;
     }
-    
+
+    .arthive{
+        font-size: 3vw !important;
+    }
+
+    .nav11{
+        margin-left: -20vw !important;
+    }
+
     .nav1{
-        margin-left: 1.75vw !important;
+        margin-left: 5vw !important;
+        font-size: 1.75vw !important;
+    }
+
+    .nav_left{
+        margin-left: 22vw !important;
     }
 
     .nav_elements1{
+        margin-left: 15vw !important;
         font-size: 1.1vw !important;
     }
 
-    .footer_heads{
-        font-size: 1.4vw !important;
+    #footer_container{
+        width: 100vw !important;
+        margin-left: -20vw !important;
+        margin-right: 0vw !important;
+        overflow-x: hidden !important;
+    }
+
+    #nav_{
+        margin-left: 20vw  !important;
+    }
+    .icons{
+        margin-left: -14vw !important;
+    }
+    .nav22{
+        margin-left: 25vw !important;
+    }
+
+    .nav_first_element{
+        font-size: 1.1vw !important;
+        margin-left: 6vw !important;
+    }
+
+    .bi{
+        font-size: 2vw !important;
     }
 
     .title{
@@ -290,15 +346,24 @@ html body{
         margin-top: 0vh;
         margin-left: 51vw;
     }
+
+    .footer_container > footer{
+        margin-left: 0vw !important;
+        margin-right: 0vw !important;
+    }
 }
 
 @media (max-width: 1440px){
+    #logo{
+        margin-left: -8vw !important;
+    }
+
     .arthive{
         font-size: 3vw !important; font-weight: bold !important;
     }
 
     .nav11{
-        margin-left: 13vw !important;
+        margin-left: 12vw !important;
     }
 
     .nav1{
@@ -315,6 +380,10 @@ html body{
 
     .footer_heads{
         font-size: 1.8vw !important;
+    }
+
+    .nav_left{
+        margin-left: 20.5vw !important;
     }
 
     .title{
@@ -348,6 +417,33 @@ html body{
         margin-left: 51vw;
         margin-bottom: -14vh;
     }
+
+    .nav_elements1{
+        margin-left: 22vw !important;
+        font-size: 1.1vw !important;
+    }
+
+    #footer_container{
+        margin-left: 1vw !important;
+    }
+
+    #nav_{
+        margin-left: 22vw  !important;
+    }
+
+    .icons{
+        margin-left: -17vw !important;
+    }
+
+    .nav22{
+        margin-left: 25vw !important;
+    }
+
+    .nav_first_element{
+        font-size: 1.1vw !important;
+        margin-left: 5vw !important;
+    }
+
 }
 
 @media (max-width: 1024px){
@@ -355,16 +451,24 @@ html body{
         font-size: 3.5vw !important; font-weight: bold !important;
     }
 
+    .nav_left{
+        margin-left: 21.5vw !important;
+    }
+
     .nav11{
         margin-left: 16vw !important;
     }
 
     .nav1{
-        margin-left: 4vw !important;
+        margin-left: 9vw !important;
     }
 
     .nav_elements{
-        font-size: 1.4vw !important;
+        font-size: 1.5vw !important;
+    }
+    .nav_first_element{
+        font-size: 1.5vw !important;
+        margin-left: 8vw !important;
     }
 
     .nav_elements1{
@@ -403,6 +507,10 @@ html body{
         margin-top: 3vh;
         margin-left: 51vw;
     }
+
+    .icons{
+        margin-left: -14vw !important;
+    }
 }
 
 @media (max-width: 768px){
@@ -411,23 +519,33 @@ html body{
     }
 
     #logo{
-        margin-left: 36vw !important;
+        margin-left: 70vw !important;
     }
+
     .nav11{
         margin-left: -38vw !important;
     }
 
-    .nav_left{
-        margin-left: 40vw !important;
+    #nav{
+        margin-left: 67vw !important;
+    }
+
+    .nav{
+        width: 100vw !important;
     }
 
     .nav_middle{
-        margin-left: 4vw !important;
+        margin-left: 13vw !important;
     }
 
     .nav_right{
-        margin-left: 4vw !important;
+        margin-left: 11vw !important;
     }
+
+    .nav_first_element{
+        font-size: 1.5vw !important;
+    }
+
     .title h1{
         margin-top: 12vh;
         margin-left: 50.5vw;
@@ -458,8 +576,16 @@ html body{
 }
 
 @media (max-width: 426px){
+    #logo{
+        margin-left: 55vw !important;
+    }
+
     .arthive{
         font-size: 6vw !important; font-weight: bold !important;
+    }
+
+    .nav_left{
+        margin-left: -4vw !important;
     }
 
     .nav_elements{
@@ -467,13 +593,21 @@ html body{
     }
 
     .nav_elements1{
+        margin-left: -1vw !important;
         font-size: 3vw !important;
     }
 
-    .footer_heads{
-        font-size: 5.5vw !important;
+    .nav_first_element{
+        font-size: 3vw !important;
     }
 
+    #nav_{
+        margin-left: 3vw !important;
+    }
+
+    .icons{
+        margin-left: 5vw !important;
+    }
     .title h1{
         margin-top: 15vh;
         margin-left: 50.5vw;
@@ -513,5 +647,11 @@ html body{
         margin-left: 48vw;
         text-align: left;
         line-height: 3vh;
+    }
+}
+
+@media (max-width: 376px){
+    #nav{
+        margin-left: 60vw !important;
     }
 }
