@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-image {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(158, 165, 240, 0.625), #0c627ca2), url("Images/pixelcut-export.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: 200;
+    padding-top: 50px;
+    font-size: 2.2em;
+    margin-bottom: -70px;
+    letter-spacing: 1px;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.error-page {
+    position: relative;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px;
+    z-index: 1;
+}
+
+.error-page img {
+    height: 38%;
+    width: 38%;
+}
+
+.error {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 8em;
+    font-weight: 800;
+    margin-top: -120px;
+    margin-bottom: -20px;
+    letter-spacing: 12px;
+}
+
+p {
+    color: white;
+    font-family: 'Sansation', sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 200;
+    font-style: italic;
+}
+
+h2{
+    font-size: 1.1em;
+}
+
+.return span:hover{
+    color: #FFF859;
+}
+.return {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+.return a{
+    text-decoration: none;
+}
+
+.return span {
+  color: #FFF859;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.return span:hover {
+    text-shadow: 1px 3px 10px rgba(3, 37, 29, 0.84);
+}
+
