@@ -1,0 +1,185 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Italiana', sans-serif; 
+  }
+  
+  .background-container {
+    position: absolute;
+    width: 100vw;
+    height: 200vh; 
+    background-color: whitesmoke;
+    background-image: url('Images/The\ Starry\ Night_1889.svg');
+    filter: blur(10px);
+    opacity: 0.25;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200vh; 
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .signature-masterpieces {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 110vw; 
+    
+  }
+  
+  /*Artwork-Name*/
+  
+  .artworks-name-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+  }
+  
+  .artworks-name {
+    font-weight: 200;
+    font-style: normal;
+    font-size: 9em;
+    color: rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Italiana';
+    letter-spacing: 1vw;
+    transform: translateY(100px); 
+    opacity: 0; 
+    animation: floatUp 1s ease-in-out 0.5s forwards; 
+  }
+  
+  .night {
+    margin-left: 24.5vw;  
+    margin-top: -2.5vw;
+    transform: translateY(100px); 
+    opacity: 0; 
+    animation: floatUp 1s ease-in-out 1s forwards; 
+  }
+  
+  .artist {
+    font-family: "Poppins";
+    font-size: 2em;
+    position: absolute;
+    text-align: center;
+    padding-top: 9em;
+    font-weight: 200;
+    font-style: italic;
+    transform: translateY(100px); 
+    opacity: 0; 
+    animation: floatUp 1s ease-in-out 1.5s forwards; 
+  }
+
+  
+  @keyframes floatUp {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+  
+  /*description of the artwork*/
+  
+  .about-the-piece {
+    display: flex;
+    align-items: center;
+    margin-top: 8vw; 
+
+  }
+  
+  .about-the-piece img {
+    border-radius: 27px;
+    width: 40vw;
+    height: 30vw;
+    object-fit: cover;
+    margin-left: 10vw; 
+    margin-bottom: 8vw;
+    transition: transform 0.5s ease-in, box-shadow 0.5s ease-out; 
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+  }
+
+  .about-the-piece img.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+  .text-container {
+    margin-left: 4vw;
+    margin-bottom: 10vw;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .text-container.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .about-the-piece h1 {
+    display: inline-block; 
+    font-family: "Poppins";
+    font-size: 4em;
+    font-weight: 300;
+    font-style: italic;
+
+  }
+  
+  .about-the-piece p {
+    font-family: "Poppins";
+    font-size: 1.5em;
+    font-weight: 400;
+    font-style: italic;
+    margin-right: 7vw;
+
+  }
+
+  /*return link*/
+
+  .return, .return * {
+    display: inline;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -5vw;
+    margin-bottom: 5vw;
+    z-index: 1;
+  }
+
+
+  .return span:last-child {
+    color: #FFF859;
+  }
+
+  .artist-link {
+    text-decoration: none;
+    color: #FFF859;
+  }
+
+  .artist-link:hover {
+    color: #FFF859; 
+  }
