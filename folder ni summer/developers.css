@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat, sans-serif';
+}
+
+
+.bg-image {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100lvw - 100px);
+  height: calc(100lvh - 100px);
+  background-image: linear-gradient(rgba(158, 165, 240, 0.452), #085269a0), url(Images/pixelcut-export1.jpeg);
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.title h1 {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 2em;
+}
+
+.title h2 {
+  color: #FFF859;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 4em;
+}
+
+.dev-container {
+  flex-grow: 1;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.dev-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.dev-pfp {
+  flex-grow: 1;
+  background-color: red;
+  position: relative;
+}
+
+.def-pfp>div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.dev-name {
+  height: 2rem;
+  color: white;
+  text-align: center;
+}
