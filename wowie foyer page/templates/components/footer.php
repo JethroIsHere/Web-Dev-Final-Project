@@ -10,18 +10,9 @@
             <div id="footer_container" class="row">
                 <div class="col-6 col-md-2 mb-3 heads">
                     <ul class="nav flex-column">
-                        <li class="nav_first_element nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-                        <li class="nav_first_element nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Developers</a></li>
-                        <li class="nav_first_element nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Purpose</a></li>
+                        <li class="nav_first_element nav-item mb-2"><a href="./about-arthive.php" class="nav-link p-0 text-body-secondary">About</a></li>
+                        <li class="nav_first_element nav-item mb-2"><a href="./developers.php" class="nav-link p-0 text-body-secondary">Developers</a></li>
 
-                    </ul>
-                </div>
-
-                <div class="col-6 col-md-2 mb-3">
-                    <ul class="nav flex-column">
-                        <li class=" nav_elements1 nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contacts</a></li>
-                        <li class="nav_elements1 nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Traverse</a></li>
-                        <li class="nav_elements1 nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Classifications</a></li>
                     </ul>
                 </div>
 
