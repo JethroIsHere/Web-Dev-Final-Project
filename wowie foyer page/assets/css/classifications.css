@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Glacial Indifference', sans-serif;
+  }
+
+.bg-image {
+    overflow: auto;
+    animation: fadeIn 1s ease-in-out; /* adjust duration to your liking */
+    background-color: rgba(255, 255, 255, 0.274);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.tailor-thy {
+  animation: wipe-right 1.7s ease-in-out;
+  animation-delay: 0.1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes wipe-right {
+  0% {
+    transform: translateX(-15%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(1%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.art-era {
+  animation: wipe-up 1.7s ease-in-out;
+  animation-delay: 0.1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes wipe-up {
+  0% {
+    transform: translateY(15%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(-1%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fancy {
+  animation: wipe-left 1.5s ease-in-out;
+  animation-delay: 0.1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes wipe-left {
+  0% {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-1%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.bg-image {
+    height: 120vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(158, 165, 240, 0.625), #0c627ccb), url("../images/ui/pixelcut-export1.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+header {
+    position: relative;
+    margin-top: 1em;
+    z-index: 1;
+}
+
+
+.art-era {
+  font-size: 10vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  color: #FFF859;
+  margin-top: 0vw;
+  margin-bottom: 0vw;
+  text-align: center;
+  line-height: 8vw;
+}
+
+
+.fancy {
+  font-size: 4vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  color: white;
+  margin-top: 0vw;
+  padding-right: 17vw;
+  text-shadow: 1px 2px 5px rgba(12, 27, 102, 0.484);
+  text-align: right;
+}
+
+/*------SELECT AN ERA Carousel-------*/
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vw;
+}
+
+
+.carousel-outer {
+  display: flex;
+  width: 70%;
+  height: 0;
+  margin-top: 40vh;
+  padding-bottom: 40%;
+  background-color: #f1f8ff59;
+  backdrop-filter: blur(1px);
+  border-radius: 40px;
+  
+}
+
+.carousel-inner {
+  display: flex;
+  margin-top: 80px;
+  width: 100%;
+  height: 33vw;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  align-items: center;
+}
+
+/*------Carousel Texts-------*/
+.carousel-item {
+  width: 70%;
+  height: 70px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 2vw;
+  line-height: 0vw;
+  letter-spacing: 1px;
+  transition: transform 1.05s;
+  animation: fadeText 1s ease-in-out;
+  animation-delay: 1.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  margin-left: 14vw;
+}
+
+
+@keyframes fadeText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+.carousel-item:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.carousel-item:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fffee1;
+  transition: width 0.3s ease-in-out;
+}
+
+.carousel-item:hover:before {
+  width: 100%;
+}
+
+.number {
+  width: 30px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 3vw;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 200;
+  float: left;
+  margin-left: -13vw;
+  margin-right: 20px;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 9px rgba(7, 23, 101, 0.9);
+}
+
+.carousel-text {
+  line-height: 2vw;
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: 800;
+  color: white;
+  float: left;
+  text-shadow: 2px 3px 5px rgba(12, 27, 102, 0.484);
+}
+
+.carousel-year {
+  line-height: 2vw;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 800;
+  color: #fffee1;
+  float: right;
+  text-shadow: 1px 2px 9px rgba(4, 0, 63, 0.676);
+}
+
+
+.first-item{
+  margin-top: 5px;
+}
+
+@media (max-width: 1025px){
+  .carousel-inner {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    height: 36vw;
+    flex-direction: column;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    align-items: center;
+}
+}
+
+@media (max-width: 769px){
+  .carousel-outer {
+    display: flex;
+    width: 70%;
+    height: 16px;
+    margin-top: 40vh;
+    padding-bottom: 40%;
+    background-color: #f1f8ff59;
+    backdrop-filter: blur(1px);
+    border-radius: 40px;
+}
+}
+
+@media (max-width: 426px){
+  .tailor-thy {
+    font-size: 5vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: white;
+    padding-left: 17vw;
+    text-shadow: 1px 2px 5px rgba(12, 27, 102, 0.484);
+    text-align: left;
+    margin-top: 4vw;
+}
+
+.carousel-outer {
+  display: flex;
+  width: 70%;
+  height: 16px;
+  margin-top: 46vh;
+  padding-bottom: 61%;
+  background-color: #f1f8ff59;
+  backdrop-filter: blur(1px);
+  border-radius: 40px;
+}
+
+.carousel-item {
+  width: 70%;
+  height: 70px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: -8vw;
+  line-height: -1vw;
+  letter-spacing: 1px;
+  transition: transform 1.05s;
+  animation: fadeText 1s ease-in-out;
+  animation-delay: 1.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  margin-left: 14vw;
+}
+
+.carousel-inner {
+  display: flex;
+  margin-top: 18px;
+  width: 100%;
+  height: 53vw;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  align-items: center;
+}
+
+.number {
+  width: 30px;
+  height: 50px;
+  line-height: 46px;
+  text-align: center;
+  font-size: 3vw;
+  font-family: "Poiret One", sans-serif;
+  font-weight: 200;
+  float: left;
+  margin-bottom: 3vw;
+  margin-left: -13vw;
+  margin-right: 20px;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 9px rgba(7, 23, 101, 0.9);
+}
+
+.carousel-item:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fffee1;
+  transition: width 0.3s ease-in-out;
+}
+}
+
